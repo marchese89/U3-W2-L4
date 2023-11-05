@@ -1,5 +1,8 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, cleanup } from "@testing-library/react";
 import CommentArea from "../components/CommentArea";
+
+afterEach(cleanup);
+
 describe("Correct mounting", () => {
   it("mounts correctly comment area", () => {
     render(<CommentArea />);

@@ -2,9 +2,9 @@
   height: 20rem;
 }
 
-.card.selected {
+/* .card.selected {
   border: 2px solid red;
-}
+} */
 
 .card {
   cursor: pointer;

@@ -2,7 +2,10 @@ import { ListGroup, Button } from "react-bootstrap";
 import { Trash3Fill } from "react-bootstrap-icons";
 const SingleComment = ({ comment, setIsLoading, setError, update }) => {
   return (
-    <ListGroup.Item className="d-flex justify-content-between">
+    <ListGroup.Item
+      className="d-flex justify-content-between"
+      data-testid="single-comment"
+    >
       <div>
         {comment.comment} - voto: {comment.rate}
       </div>

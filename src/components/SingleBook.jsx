@@ -5,7 +5,8 @@ const SingleBook = ({ setSelectedBook, book, selectedBook }) => {
   return (
     <>
       <Card
-        className={selectedBook === book.asin ? "selected" : ""}
+        // className={selectedBook === book.asin ? "selected" : ""}
+        style={selectedBook === book.asin ? { border: "2px solid red" } : {}}
         onClick={() => {
           setSelectedBook(book.asin);
         }}
